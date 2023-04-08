@@ -1,1 +1,1 @@
-# node_passport_oauth2
+# node_oauth2

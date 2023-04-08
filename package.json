@@ -1,5 +1,5 @@
 {
-  "name": "node_passport_oauth2",
+  "name": "node_oauth2",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shekbruce/node_passport_oauth2.git"
+    "url": "git+https://github.com/shekbruce/node_oauth2.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/shekbruce/node_passport_oauth2/issues"
+    "url": "https://github.com/shekbruce/node_oauth2/issues"
   },
-  "homepage": "https://github.com/shekbruce/node_passport_oauth2#readme",
+  "homepage": "https://github.com/shekbruce/node_oauth2#readme",
   "dependencies": {
     "body-parser": "^1.20.2",
     "dotenv": "^16.0.3",
