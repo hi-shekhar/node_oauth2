@@ -4,10 +4,7 @@
     <%- include ('./partials/header') %>
   </head>
   <body>
-    <% if(auth){ %>
-        <%- include ('./partials/login') %>
-      <% } else{ %>  
-        <%- include ('./partials/loggedin') %>
-     <% } %>
+    <% if(data){ %> <%- include ('./partials/loggedin') %> <% } else{ %> <%-
+    include ('./partials/login') %> <% } %>
   </body>
 </html>
