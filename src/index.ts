@@ -16,11 +16,21 @@ require("./auth/setup");
 app.use(
   session({
     secret: process.env.SECRET_KEY as string,
+    resave: false,
+    saveUninitialized: true,
     cookie: { maxAge: 60000 },
   })
 );
 
+/**
+ * passport.initialize() intializes Passport for incoming requests, allowing authentication strategies to be applied.
+ *
+ */
 app.use(passport.initialize());
+
+/**
+ * passport.session() acts as a middleware to alter the req object and change the 'user' value that is currently the session id (from the client cookie) into the true deserialized user object.
+ */
 app.use(passport.session());
 
 // support parsing of application/json type post data

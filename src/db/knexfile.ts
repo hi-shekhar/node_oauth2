@@ -2,7 +2,6 @@ import * as dotenv from "dotenv";
 dotenv.config({ path: "./../../.env" });
 import type { Knex } from "knex";
 
-console.log(process.env.DB_CLIENT);
 const config: { [key: string]: Knex.Config } = {
   development: {
     client: process.env.DB_CLIENT,
@@ -18,5 +17,3 @@ const config: { [key: string]: Knex.Config } = {
 };
 
 module.exports = config.development;
-
-
